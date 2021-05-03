@@ -54,13 +54,7 @@ navNames[3].textContent = siteContent["nav"]["nav-item-4"];
 navNames[4].textContent = siteContent["nav"]["nav-item-5"];
 navNames[5].textContent = siteContent["nav"]["nav-item-6"];
 
-navNames[0].style.color = 'green';
-navNames[1].style.color = 'green';
-navNames[2].style.color = 'green';
-navNames[3].style.color = 'green';
-navNames[4].style.color = 'green';
-navNames[5].style.color = 'green';
-
+navNames.forEach(a => a.style.color = 'green');
 
 const faq = document.createElement('a');
 faq.href = '#';
