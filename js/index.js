@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM \r\n Is \r\n Awesome",
+    "h1": "DOM <br> is <br> Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -28,7 +28,7 @@ const siteContent = {
   },
   "contact": {
     "contact-h4" : "Contact",
-    "address" : "123 Way 456 Street \\n Somewhere, USA",
+    "address" : "123 Way 456 Street <br> Somewhere, USA",
     "phone" : "1 (888) 888-8888",
     "email" : "sales@greatidea.io",
   },
@@ -43,7 +43,7 @@ const siteContent = {
 
 const title = document.querySelector('title');
 title.textContent = 'Great Idea!';
-console.log('title here', title);
+// console.log('title here', title);
 
 // Updating nav bar
 const navNames = document.querySelectorAll('a');
@@ -82,7 +82,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 // Updating first section
 const heading = document.querySelector('h1');
-heading.textContent = siteContent["cta"]["h1"];
+heading.innerHTML = siteContent["cta"]["h1"];
 console.log('title here', heading);
 
 const button = document.querySelector('button');
@@ -138,7 +138,7 @@ const contactTitle = document.querySelectorAll('h4');
 contactTitle[5].textContent = siteContent["contact"]["contact-h4"];
 
 const address = document.querySelectorAll('p');
-address[5].textContent = siteContent["contact"]["address"];
+address[5].innerHTML = siteContent["contact"]["address"];
 
 address[6].textContent = siteContent["contact"]["phone"];
 
